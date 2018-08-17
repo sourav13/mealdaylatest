@@ -1,6 +1,6 @@
- <?php require_once('../private/initialize.php'); ?> 
+ <?php require_once('private/initialize.php'); ?> 
 <?php
-include('login.php');
+include('public/login.php');
 
 
 /*if(isset(($_SESSION['login_persons']))){
