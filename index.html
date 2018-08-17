@@ -1,14 +1,5 @@
 <?php require_once('private/initialize.php'); ?> 
-<?php
-include('public/login.php');
-/*if(isset(($_SESSION['login_persons']))){
-	$persons_check = $_SESSION['login_persons'];
-			$sql = "select * from users where email='$persons_check'";
-			$result = $connection->query($sql);
-			$row = $result->fetch_assoc();
-}
-*/
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,35 +17,26 @@ s0.parentNode.insertBefore(s1,s0);
 		<title></title>
 		  <!-- CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="public/assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="pubilc/assets/css/style.css">
  <!-- Favicon and touch icons -->
-        <link rel="shortcut icon" href="assets/ico/favicon.png">
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="public/assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="public/assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="public/assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="public/assets/ico/apple-touch-icon-57-precomposed.png">
 
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		  <!-- Latest compiled and minified CSS -->
-		  
-		<?php include("libbootandjq.php");?>
-		<?php include("header.php");?>
 		
-		<?php include("Slideshowstyle.php");?>
-			
-	   <?php include('SignIn.php');?>
-	   <?php include('SignUpAction.php');?>
 	   
 
 </head>
 <body>
 
-<?php include('public/Slideshow.php');?>
-<?php include('public/SignInModal.php');?>
-<?php include('public/SignUpModal.php');?>
+
 <br>
 	 
 		<!-- append this to ul and remove login and signup from header if possible. or include a different headers for both pages.!-->
@@ -90,7 +72,7 @@ s0.parentNode.insertBefore(s1,s0);
 	                		<div class="tab-content">
 	                			<div role="tabpanel" class="tab-pane fade in active" id="tab1">
 	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/11.jpg" alt="t1">
+	                					<img src="public/assets/img/testimonials/11.jpg" alt="t1">
 	                				</div>
 	                				<div class="testimonial-text">
 		                                <p>
@@ -101,7 +83,7 @@ s0.parentNode.insertBefore(s1,s0);
 	                			</div>
 	                			<div role="tabpanel" class="tab-pane fade" id="tab2">
 	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/22.jpg" alt="t2">
+	                					<img src="public/assets/img/testimonials/22.jpg" alt="t2">
 	                				</div>
 	                				<div class="testimonial-text">
 		                                <p>
@@ -123,7 +105,7 @@ s0.parentNode.insertBefore(s1,s0);
 	                			</div>
 	                			<div role="tabpanel" class="tab-pane fade" id="tab4">
 	                				<div class="testimonial-image">
-	                					<img src="assets/img/testimonials/44.jpg" alt="t4">
+	                					<img src="public/assets/img/testimonials/44.jpg" alt="t4">
 	                				</div>
 	                				<div class="testimonial-text">
 		                                <p>
@@ -158,12 +140,10 @@ s0.parentNode.insertBefore(s1,s0);
 
 
         <!-- Javascript -->
-        <script src="assets/js/jquery-1.11.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.backstretch.min.js"></script>
-        <script src="assets/js/scripts.js"></script>
+        <script src="public/assets/js/jquery-1.11.1.min.js"></script>
+        <script src="public/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="public/assets/js/jquery.backstretch.min.js"></script>
+        <script src="public/assets/js/scripts.js"></script>
 
-
-<?php include("public/footer.php");?>
 </body>
 </html>
